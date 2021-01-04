@@ -14,7 +14,7 @@ public:
     // TableData(String FileName);
     string ToString();
     int Push(TableUnit *);
-
+    int Delete(int index);
 
 };
 #endif

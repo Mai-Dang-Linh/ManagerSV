@@ -15,14 +15,20 @@ string TableData::ToString()
     {
         s += unit->ToString();
         s += "\n";
-        cout<<"Hello";
     }
     return s;
 }
-int TableData::Push(TableUnit *)
+int TableData::Push(TableUnit * unit)
 {
-    TableUnit * unit;
+    // TableUnit * unit;
     data.push_back(unit);
     size++;
     return size;
+}
+int TableData::Delete(int index)
+{
+    if(index<data.size())
+        data.erase(data.begin()+index);
+    else index = -1;
+    return index;
 }
