@@ -1,0 +1,1 @@
+g++ main.cpp ManagerST/TableUnit.cpp  ManagerST/Sinhvien.cpp Dataaccess/TableData.cpp -o main.exe
